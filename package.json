@@ -1,0 +1,22 @@
+{
+  "name": "generator-gillespie59-express",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gillespie59/generator-gillespie59-express.git"
+  },
+  "author": "Emmanuel DEMEY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gillespie59/generator-gillespie59-express/issues"
+  },
+  "homepage": "https://github.com/Gillespie59/generator-gillespie59-express",
+  "dependencies": {
+    "yeoman-generator": "^0.19.2"
+  }
+}
