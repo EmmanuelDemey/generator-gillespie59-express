@@ -34,11 +34,22 @@
 	};
 
 	/**
+	* Copy basic server.js file
+	*/
+	generator.prototype.gruntfile = function(){
+		this.fs.copy(
+			this.templatePath('server.js'),
+			this.destinationPath('server.js')
+		);
+	};
+
+	/**
 	* Install NPM dependencies
 	*/
 	generator.prototype.installNpmDependencies = function() {
 		var dependencies = [
       'express',
+			'http-status',
 			'winston'
 		];
 		this.npmInstall(dependencies, { 'save': true });
