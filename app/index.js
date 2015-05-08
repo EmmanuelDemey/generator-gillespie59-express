@@ -2,6 +2,10 @@
 	'use strict';
 	var generators = require('yeoman-generator');
 
+	/**
+	* Prompt information to the user in
+	* order to customize the application
+	*/
 	var generator = generators.Base.extend({
 		prompting: function () {
 			var done = this.async();
@@ -17,6 +21,9 @@
 		}
 	});
 
+	/**
+	* Create package.json file
+	*/
 	generator.prototype.packagejson = function() {
 		var pkg = {
 			'name': this.appName,
@@ -26,6 +33,9 @@
 		this.write('package.json', JSON.stringify(pkg));
 	};
 
+	/**
+	* Install NPM dependencies
+	*/
 	generator.prototype.installNpmDependencies = function() {
 		var dependencies = [
       'express',
