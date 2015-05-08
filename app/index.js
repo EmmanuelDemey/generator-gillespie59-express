@@ -28,7 +28,8 @@
 
 	generator.prototype.installNpmDependencies = function() {
 		var dependencies = [
-      'express'
+      'express',
+			'winston'
 		];
 		this.npmInstall(dependencies, { 'save': true });
 	};
