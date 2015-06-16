@@ -34,13 +34,11 @@
 	};
 
 	/**
-	* Copy basic server.js file
+	* Copy files
 	*/
 	generator.prototype.gruntfile = function(){
-		this.fs.copy(
-			this.templatePath('server.js'),
-			this.destinationPath('server.js')
-		);
+		this.fs.copy(this.templatePath('server.js'),this.destinationPath('server.js'));
+		this.fs.copy(this.templatePath('middlewares/README.md'),this.destinationPath('middlewares/README.md'));
 	};
 
 	/**
